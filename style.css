@@ -1,0 +1,41 @@
+/* Styles for Email Form */
+.email-form {
+    display: flex;
+    flex-direction: column;
+    margin: 1em 0;
+}
+
+.email-form input[type="email"] {
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.email-form button {
+    padding: 0.5em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.email-form button:hover {
+    background-color: #45a049;
+}
+
+/* Styles for Discord Button */
+.discord-button {
+    display: inline-block;
+    padding: 0.5em 1em;
+    background-color: #7289DA;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.discord-button:hover {
+    background-color: #5B6EAE;
+}
