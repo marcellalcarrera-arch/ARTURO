@@ -1,16 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Email Input Form</title>
+    <title>Aplicativo de E-mail - ARTURO</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Email Input Form</h1>
-    <form>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <input type="submit" value="Submit">
-    </form>
+    <div class="container">
+        <div class="card">
+            <h1>📧 Aplicativo de E-mail</h1>
+            <p class="subtitle">Digite seu e-mail para continuar</p>
+            
+            <form id="emailForm">
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        placeholder="seu.email@exemplo.com"
+                        required
+                    >
+                    <span class="error-message" id="errorMessage"></span>
+                </div>
+                
+                <button type="submit" class="btn-submit">Enviar</button>
+            </form>
+            
+            <div id="successMessage" class="success-message">
+                ✓ E-mail registrado com sucesso!
+            </div>
+            
+            <div id="emailDisplay" class="email-display">
+                <p>Seu e-mail: <strong id="displayEmail"></strong></p>
+            </div>
+            
+            <div class="discord-section">
+                <p class="discord-text">🎮 Junte-se ao nosso Discord:</p>
+                <a href="https://discord.gg/YOUR-INVITE-CODE" target="_blank" class="btn-discord">
+                    💜 Entrar no Discord
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
 </body>
 </html>
